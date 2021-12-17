@@ -65,14 +65,12 @@ hr{
    font-style: italic;
    text-align: right;
  }
- input:focus, select:focus, textarea:focus {
-   outline: 4px solid  red;
- }
+ 
 form {
    max-width: 100%;
    margin: 10px auto;
    padding: 10px 20px;
-   background: #f4f7f8;
+   background: lightpink;
    border-radius: 8px;
  }
  label {
@@ -182,12 +180,25 @@ input[type="text"],
 
 
 /************  focus transitions */
-input[type="text"]:focus, 
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="number"]:focus
+input[type="text"], 
+input[type="email"],
+input[type="tel"],
+input[type="number"]
  {
-   background-color: lightpink;
+   background-color: rgb(229, 216, 245);
+ }
+ input[type="text"]:hover, 
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover
+ {
+   width: 100px;
+   height: 100px;
+   background-color: rgb(233, 250, 158);
+   transition: width 2s, height 4s;
+ }
+ input:focus, select:focus, textarea:focus {
+   outline: 4px solid  red;
  }
 
  /************  Tablet/Desktop Design */
@@ -216,12 +227,14 @@ input[type="number"]:focus
    .formS1 label {
       display: inline-block;
       flex-basis: 25%;
+      align-items: center;
       
    }
 
    .formS1 {
       display: flex;
       flex-direction: row;
+      align-items: center;
       
     }
    #zip {
