@@ -187,18 +187,10 @@ input[type="number"]
  {
    background-color: rgb(229, 216, 245);
  }
- input[type="text"]:hover, 
-input[type="email"]:hover,
-input[type="tel"]:hover,
-input[type="number"]:hover
- {
-   width: 100px;
-   height: 100px;
-   background-color: rgb(233, 250, 158);
-   transition: width 2s, height 4s;
- }
+
  input:focus, select:focus, textarea:focus {
-   outline: 4px solid  red;
+   outline: 4px dotted magenta;
+   transition: outline 1s;
  }
 
  /************  Tablet/Desktop Design */
