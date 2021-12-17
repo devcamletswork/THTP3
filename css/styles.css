@@ -1,0 +1,223 @@
+* {
+    font-family: "Hind Madurai";
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /************  Mobile First Design */
+
+  body {
+
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: white;
+  
+  }
+
+ header{
+
+    background-color: #303030;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+ }
+ 
+ .section-1 {
+
+  max-width: 100%; 
+  margin-right: 5%;
+  margin-left: 5%;
+ }
+ .signUpText {
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+ }
+ .signUpParagraph {
+    margin-bottom: 40px;
+    color: rgba(48, 46, 46, 0.507);
+ }
+
+ .hrs{
+    
+    height: 7px;
+    border-top: 8px double #000000;
+    color: #303030;
+    overflow: visible;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+hr{
+
+   border-top: 2px solid #303030;
+   margin-right: 20px;
+   margin-left: 20px;
+   margin-bottom: 30px;
+   height: 10px;
+}
+::placeholder {
+   font-style: italic;
+   text-align: right;
+ }
+ input:focus, select:focus, textarea:focus {
+   outline: 4px solid  red;
+ }
+form {
+   max-width: 100%;
+   margin: 10px auto;
+   padding: 10px 20px;
+   background: #f4f7f8;
+   border-radius: 8px;
+ }
+ label {
+   display: block;
+   margin-bottom: 10px;
+   color: rgba(48, 46, 46, 0.507);
+ }
+
+ 
+ fieldset {
+   border: none;
+   
+}
+fieldset label, input {
+text-align: left;
+
+}
+
+legend {
+   text-align: left;
+   margin-bottom: 25px;
+   font-weight: bold;
+   font-size: 24px
+   
+ }
+input[type="text"],
+ input[type="email"],
+ input[type="number"],
+ input[type="tel"],
+ textarea,
+ select {
+   background: rgba(255,255,255,0.1);
+   border: none;
+   font-size: 16px;
+   height: auto;
+   margin: 0;
+   outline: 0;
+   padding: 15px;
+   width: 100%;
+   background-color: #e5ecee;
+   color: #0c0c0c;
+   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+   margin-bottom: 20px;
+ }
+
+.states {
+
+   margin-bottom: 20px;
+   
+}
+.zip{
+
+   width:40%;
+}
+ .formBottomSection label {
+
+   display: inline-block;
+   
+ }
+ 
+.newsDiv1, .newsDiv2 {
+
+   text-align: left;
+   
+}
+
+ input[type="checkbox"] {
+   background-color: blue;
+   padding-bottom: 20px;
+}
+ .newsDiv1 p, .newsDiv2 p{
+
+  
+  padding-bottom: 20px;
+  text-align: left;
+ }
+
+ .textArea {
+
+   margin-top: 20px;
+   text-align: left;
+ }
+ .button {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 20px 2px;
+   cursor: pointer;
+   width: 95%;
+   padding-left: 5%;
+   padding-right: 5%;
+ }
+
+ input[type="text"], input[type="email"] {
+   text-align: right;
+ } 
+
+ /************  Tablet/Desktop Design */
+
+ @media screen and (min-width: 768px) {
+
+   form {
+
+      max-width: 90%;
+   }
+   .hrs {
+      
+      max-width: 70%;
+      margin: 0 auto;
+   }
+   input[type="text"],
+   input[type="email"],
+   input[type="tel"],
+   select[name="state"]{
+      width: 70%;
+   }
+
+   input[type="zip"]{
+      width: 30%;
+   }
+   
+   .formS1 label {
+      display: inline-block;
+      
+   }
+
+   .formS1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+   #zip {
+
+      background-color: red;
+      
+   }
+
+   .textArea, .button {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+ }
